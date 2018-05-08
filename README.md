@@ -13,6 +13,11 @@ Social chat application server built using postgresql and graphql server
 - After that look at the document for sequelize/express-example to create the models and docs.sequelize for the associations.
 - Once you have associated all the models you can run the psql commaned to check your working db and also check out all the tables that are created based on our schema
 
+## Step-3: (branch-name => seperation_of_concerns)
+- In this merge we seperate out schemas and resolvers into folders there by making each block into a individual schema and a resolver file.
+- We also cleaned the code a bit and created two new table in the postgres database locally.
+- The schemas present can be used on the client side to query and mutate the database, in short it can be used to build a frontend application.
+
 
 ## To run
 ```
