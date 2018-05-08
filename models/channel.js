@@ -9,6 +9,11 @@ export default (sequelize, DataTypes) => {
     Channel.belongsTo(models.Team, {
       foreignKey: 'teamId',
     });
+    // Only for private chat groups.
+    Channel.belongsToMany(models.Team, {
+			through: 'channel_member',
+			foreignKey: 'channelId',
+    });
   };
   return Channel;
 };
